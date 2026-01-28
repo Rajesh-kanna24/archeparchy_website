@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Services - Sailor Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top" style="background-color: #a84508;">
+
+
+  <nav id="navmenu" class="navmenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="administration.html">Archeparchial Administration</a></li>
+      <li><a href="parishes.html">Parishes</a></li>
+      <li><a href="#">Priests</a></li>
+      <li><a href="seminarians.html">Seminarians</a></li>
+      <li><a href="institutes.html">Institutes of Consecrated Life & Societies of Apostolic Life</a></li>
+      <li><a href="#">Departments</a></li>
+      <li><a href="#">Missions</a></li>
+      <li><a href="#">Saints from the Archeparchy</a></li>
+    </ul>
+    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+  </nav>
+
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h5 class="mb-2 mb-lg-0">The priesthood is the love of the heart of Jesus.
+            When you see a priest, think of our Lord Jesus Christ - St. John Maria Vianney</h5>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Priests</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Priests</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-1">Priests</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-2">The Retired</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-3">Seniority List According to Priestly Ordination</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-4">Obituary</a>
+              </li>
+            </ul>
+          </div>
+         <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="features-tab-1">
+                <h3>Priests <small class="text-muted">(Page <span id="pageNum">1</span> of <span id="totalPages">1</span>)</small></h3>
+                
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped mt-3" id="priestsTable">
+                    <thead class="table-dark">
+                        <tr>
+                        <th>Sl No</th>
+                        <th>Name, Parish, Tel. (H) & Mobile (M), Email</th>
+                        <th>Dates of Birth & Ordination</th>
+                        <th>Present Address</th>
+                        </tr>
+                    </thead>
+                    <tbody id="priestsTableBody">
+                        <!-- Data populated by JS -->
+                    </tbody>
+                    </table>
+                </div>
+                
+                <!-- Pagination Controls -->
+                <nav aria-label="Priests pagination">
+                    <ul class="pagination justify-content-center">
+                    <li class="page-item disabled" id="prevPage">
+                        <a class="page-link" href="#" onclick="prevPage()">Previous</a>
+                    </li>
+                    <li class="page-item active" id="page1"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item" id="page2"><a class="page-link" href="#">2</a></li>
+                    <!-- More pages added dynamically -->
+                    <li class="page-item" id="nextPage">
+                        <a class="page-link" href="#" onclick="nextPage()">Next</a>
+                    </li>
+                    </ul>
+                </nav>
+                </div>
+
+               <div class="tab-pane" id="features-tab-2">
+                <h3>The Retired</h3>
+                <h5> Priest Home - Ithithanam</h5>
+                <table class="table table-bordered table-striped mt-3">
+                      <tbody>
+                        <tr>
+                          <td>Rev. Fr. Alumparampil Thomas</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Ayila Thomas</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Chirakadavil Joseph</td>
+                        </tr>     
+                        <tr>
+                          <td>Rev. Fr. Kalapurackal Peter</td>
+                        </tr>          
+                        <tr>
+                          <td>Rev. Fr. Kalassery Sebastian</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Kalayil Joseph</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Kallupura Zacharias</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Kanjirathummoottil Thomas</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Kattampally Sebastian</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Kochupurackal Jacob</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Kodickal Varghese</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Kokkattu Kuruvila</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Kottaram Jose P</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Kunnumpuram Philip</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Kurinjiparampil Joseph</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Lanithottam Jacob</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Madathil Joseph</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Manjerikalam Sebastian</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Muttathukunnel Thomas</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Naduvilezham Joseph</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Palakunnel Cherian</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Palathunkal Dominic</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Peediackal Luke</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Peelianickal Thomas</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Pulickal Joseph</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Pulickaparampil Mathews</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Puthenparampil Joseph</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Puthuparampil Zacharias</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Srampickal Thomas</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Thekkekottaram Thomas</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Vattakalam Joseph</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Vayalar Jose</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Vayalil Thomas</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Vetticad Joseph</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+            <h5>Priests Living in Priest Home</h5>        
+            <table class="table table-bordered table-striped mt-3">
+                      <tbody>
+                        <tr>
+                          <td>Rev. Fr. Kalappura Toms</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Kunnackattuthara Zacharias</td>
+                        </tr>
+                        <tr>
+                          <td>Rev. Fr. Mulackal James</td>
+                        </tr>     
+                        <tr>
+                          <td>Rev. Fr. Viruppel Jose</td>
+                        </tr>          
+                      </tbody>
+                    </table>
+
+            <h5>Residence in other Place</h5>     
+            <table class="table table-bordered table-striped mt-3">
+                      <tbody>
+                        <tr>
+                          <td>Alencherry Jose</td>
+                          <td>Canada</td>
+                        </tr>
+                        <tr>
+                          <td>Chethipuzha Varghese</td>
+                          <td>Home, Kurumpanadom</td>
+                        </tr>
+                        <tr>
+                          <td>Edayalil Jacob</td>
+                          <td>Home, Punnathura</td>
+                        </tr>     
+                        <tr>
+                          <td>Eruthanattu Joseph</td>
+                          <td>Home, Vaipur</td>
+                        </tr> 
+                        <tr>
+                          <td>Kallukalam Mathew</td>
+                          <td>Home, Changanacherry</td>
+                        </tr>
+                        <tr>
+                          <td>Kamukampallil Antony</td>
+                          <td>MOC, Kottayam</td>
+                        </tr>
+                        <tr>
+                          <td>Kandankary Xavier</td>
+                          <td>Germany</td>
+                        </tr>
+                        <tr>
+                          <td>Karikkampally James</td>
+                          <td>Germany</td>
+                        </tr>
+                        <tr>
+                          <td>Kochuthara Thomas</td>
+                          <td>CANA, Thuruthy</td>
+                        </tr>
+                        <tr>
+                          <td>Koodathil George</td>
+                          <td>Mother Theresa Home, Nedumkunnam</td>
+                        </tr>
+                        <tr>
+                          <td>Madathiparampil George</td>
+                          <td>St. Thomas Mount, Kakkanad</td>
+                        </tr>
+                        <tr>
+                          <td>Maroor Joseph</td>
+                          <td>Home, Kozhikode</td>
+                        </tr>
+                        <tr>
+                          <td>Mattam Mathew</td>
+                          <td>Metropolitan Church, Changanacherry</td>
+                        </tr>
+                        <tr>
+                          <td>Mullassery Mathew</td>
+                          <td>St. Gregorios Church, Punnapra</td>
+                        </tr>
+                        <tr>
+                          <td>Naduviledam Gregory</td>
+                          <td>St. Mary's Church, Parel</td>
+                        </tr>
+                        <tr>
+                          <td>Poovathinkal Joseph</td>
+                          <td>St. Mary's Church, Parel</td>
+                        </tr>
+                        <tr>
+                          <td>Punchayil Mathew</td>
+                          <td>Mother Theresa Home, Nedumkunnam</td>
+                        </tr>
+                        <tr>
+                          <td>Puthenpura Varghese</td>
+                          <td>St. George Forane Church, Edathua</td>
+                        </tr>
+                        <tr>
+                          <td>Puthiyidam Thomas</td>
+                          <td>St. Thomas Hospital, Chethipuzha</td>
+                        </tr>
+                        <tr>
+                          <td>Thekkekara Thomas</td>
+                          <td>Home, Nalukody</td>
+                        </tr>
+                        <tr>
+                          <td>Thumpayil Thomas</td>
+                          <td>LSDP, Kunnamthanam</td>
+                        </tr>
+                        <tr>
+                          <td>Puthuveettilkalam Joseph (Sr)</td>
+                          <td>Home, Punnakkunnathussery</td>
+                        </tr>
+                        <tr>
+                          <td>Valiyaveettil George</td>
+                          <td>Home, Ernakulam</td>
+                        </tr>
+                        <tr>
+                          <td>Vellanickal Mathew</td>
+                          <td>Spirituality Centre, Manganam</td>
+                        </tr>
+                      </tbody>
+                    </table>
+              </div>
+
+              <div class="tab-pane" id="features-tab-3">
+                <h3>Seniority List According to Priestly Ordination</h3>
+                <h5>(1985 - 2022)</h5>
+
+                <table class="table table-bordered table-striped mt-3">
+                  <thead class="table-dark">                      
+                    <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th></th>
+                          <th>Date of Birth</th>
+                          <th>Date of Ord.</th>
+                        </tr>
+                      </thead>
+                      <tbody id="seniorityTableBody"></tbody>
+                    </table>
+              </div> 
+            
+              <div class="tab-pane" id="features-tab-4">
+                <h3>Prelates and Priests of Changanacherry Archeparchy</h3>
+                <h5> 1958 - 2022</h5>
+                <table class="table table-bordered table-striped mt-3">
+                  <thead class="table-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Birth</th>
+                        <th>Ordination</th>
+                        <th>Death</th>
+                    </tr>
+                  </thead>
+                      <tbody id="obituaryTableBody"></tbody>
+                </table>
+              </div> 
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Archeparchy of Changanassery</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Archbishop’s House
+                Changanacherry,</p>
+            <p> Kerala, India</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>0481 2420040, 2420379, 2420614</span></p>
+            <p><strong>Email:</strong> <span>info@archchanganacherry.org</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="#">Administration</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Associations</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Help Center</h4>
+          <ul>
+            <li><a href="#">KCBC</a></li>
+            <li><a href="#">Syro Malabar</a></li>
+            <li><a href="#">Syro Malankara</a></li>
+            <li><a href="#">Latin Hierarchy</a></li>
+            <li><a href="#">CARP</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Subscribe to Madhyasthan</h4>
+          <p>Stay updated with the latest news, events, and spiritual reflections.</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Archeparchy of Changanassery</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Developed by <a href="https://adsofttechnologies.com/">AD Soft Technologies</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+
+
+    // Pagination settings
+    let currentPage = 1;
+    const itemsPerPage = 150;
+    let priestsData = [];
+
+      fetch('priests.json')
+      .then(response => response.json())
+      .then(data => {
+        priestsData = data;
+        displayPage(1);
+      })
+      .catch(err => console.error(err));
+
+    function displayPage(page) {
+    currentPage = page;
+    const startIndex = (page - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const pageData = priestsData.slice(startIndex, endIndex);
+    
+    // Update table body
+    const tbody = document.getElementById('priestsTableBody');
+    tbody.innerHTML = '';
+    
+    pageData.forEach((priest, index) => {
+        const row = `
+        <tr>
+            <td>${startIndex + index + 1}</td>
+            <td>
+            <strong>${priest.name}</strong><br>
+            ${priest.parish}<br>
+            H: ${priest.homeTel} | M: ${priest.mobile}<br>
+            <a href="mailto:${priest.email}">${priest.email}</a>
+            </td>
+            <td>
+            DOB: ${priest.dob}<br>
+            Ord: ${priest.ordination}
+            </td>
+            <td>${priest.address}</td>
+        </tr>
+        `;
+        tbody.innerHTML += row;
+    });
+    
+    // Update pagination
+    updatePagination();
+    }
+
+    function updatePagination() {
+    const totalPages = Math.ceil(priestsData.length / itemsPerPage);
+    document.getElementById('pageNum').textContent = currentPage;
+    document.getElementById('totalPages').textContent = totalPages;
+    
+    // Update page buttons
+    document.querySelectorAll('.page-item[id^="page"]').forEach(item => {
+        item.classList.remove('active');
+    });
+    if (document.getElementById(`page${currentPage}`)) {
+        document.getElementById(`page${currentPage}`).classList.add('active');
+    }
+    
+    // Previous/Next buttons
+    document.getElementById('prevPage').classList.toggle('disabled', currentPage === 1);
+    document.getElementById('nextPage').classList.toggle('disabled', currentPage === totalPages);
+    }
+
+    function nextPage() {
+    const totalPages = Math.ceil(priestsData.length / itemsPerPage);
+    if (currentPage < totalPages) {
+        displayPage(currentPage + 1);
+    }
+    }
+
+    function prevPage() {
+    if (currentPage > 1) {
+        displayPage(currentPage - 1);
+    }
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function() {
+    displayPage(1);
+    });
+
+  fetch("seniority.json")
+    .then(res => res.json())
+    .then(data => {
+      const tbody = document.getElementById("seniorityTableBody");
+      data.forEach(row => {
+        tbody.innerHTML += `
+          <tr>
+            <td>${row.name}</td>
+            <td>${row.year}</td>
+            <td>${row.dob}</td>
+            <td>${row.ord}</td>
+          </tr>
+        `;
+      });
+    });
+
+    fetch("obituary.json")
+    .then(res => res.json())
+    .then(data => {
+      const tbody = document.getElementById("obituaryTableBody");
+      data.forEach(row => {
+        tbody.innerHTML += `
+          <tr>
+            <td>${row.name}</td>
+            <td>${row.dob}</td>
+            <td>${row.ord}</td>
+            <td>${row.dod}</td>
+          </tr>
+        `;
+      });
+    });
+
+
+</script>
+
+
+</body>
+
+</html>
